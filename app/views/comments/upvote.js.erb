@@ -1,0 +1,11 @@
+
+
+(function () {
+  var newCommentScore = "<%= pluralize(@comment.score, 'like') %>";
+
+$(".comment[data-id= <%= @comment.id %>] .score").text(newCommentScore);
+
+})();
+
+
+$('#comment_name').val.empty();
